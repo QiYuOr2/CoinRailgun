@@ -1,0 +1,28 @@
+{
+  "basic": {
+    "title": "梦里的博客",
+    "author": "徐梦宇",
+    "description": "每一个冬天的句点都是春暖花开。"
+  },
+  "theme": {
+    "name": "default",
+    "highlight": "railscasts",
+    "page_size": 7,
+    "exclude": [
+      "life"
+    ],
+    "nav": [
+      {
+        "title": "标签",
+        "url": "/tags"
+      },
+      {
+        "title": "关于",
+        "url": "/about"
+      }
+    ]
+  },
+  "dev_server": {
+    "port": 3000
+  }
+}

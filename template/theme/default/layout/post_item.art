@@ -1,0 +1,18 @@
+<div class="post-item">
+  <div class="post-item__title">{{title}}</div>
+  <div class="post-item__desc">
+    <p class="post-item__desc-date">{{date}}</p>
+    <p class="post-item__desc-tag">
+      {{each tags}}
+      <span>{{$value}}</span>
+      {{/each}}
+    </p>
+    <p class="post-item__desc-categorie">{{categorie}}</p>
+  </div>
+  <div class="post-item__abstract">
+    <p class="post-item__abstract-content">{{@ abstracts}}</p>
+    <p class="more">
+      <a href="">查看更多</a>
+    </p>
+  </div>
+</div>

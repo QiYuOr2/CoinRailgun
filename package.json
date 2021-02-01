@@ -1,0 +1,33 @@
+{
+  "name": "coinrailgun",
+  "version": "1.0.0",
+  "description": "",
+  "bin": {
+    "crn": "./bin/crn.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tuzilow/CoinRailgun.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tuzilow/CoinRailgun/issues"
+  },
+  "homepage": "https://github.com/Tuzilow/CoinRailgun#readme",
+  "dependencies": {
+    "art-template": "^4.13.2",
+    "commander": "^7.0.0",
+    "dayjs": "^1.10.4",
+    "front-matter": "^4.0.2",
+    "fs-extra": "^9.1.0",
+    "glob": "^7.1.6",
+    "highlight.js": "^10.5.0",
+    "markdown-it": "^12.0.4",
+    "ramda": "^0.27.1"
+  }
+}
