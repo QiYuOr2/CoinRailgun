@@ -1,15 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="author" content="{{author}}">
+    <meta name="description" content="{{description}}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="/assets/lib/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+
     {{block 'head'}}{{/block}}
 
     <title>{{block 'title'}}Coin Railgun{{/block}}</title>
   </head>
   <body>
-    {{block 'content'}}{{/block}}
+    <div class="container">
+      <aside>
+        {{block 'aside'}}{{/block}}
+      </aside>
+      <main>
+        {{block 'content'}}{{/block}}
+        <footer>
+        {{block 'footer'}}{{/block}}
+        </footer>
+      </main>
+    </div>
   </body>
 </html>

@@ -1,0 +1,12 @@
+<div class="footer">
+  {{if beian}}
+  <div class="beian">{{beian}}</div>
+  {{/if}}
+  <div class="theme">
+    博客主题为 <a href="https://github.com/Tuzilow/CoinRailgun">CoinRailgun</a> 默认主题
+  </div>
+  <div class="copyright">
+    <span>© {{year}} {{author}}.</span>
+    <span>Powered by <a href="https://github.com/Tuzilow/CoinRailgun">CoinRailgun</a></span>
+  </div>
+</div>

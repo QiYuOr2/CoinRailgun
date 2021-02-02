@@ -1,0 +1,87 @@
+.sidebar {
+  position: fixed;
+  z-index: 5000;
+  width: 20rem;
+  height: 100%;
+  overflow-y: auto;
+  box-shadow: var(--shadow-spread-light);
+  background-color: var(--white);
+  transition: all 0.25s;
+}
+.sidebar:hover {
+  box-shadow: var(--shadow-spread-dark);
+  transition: all 0.25s;
+}
+
+.sidebar > * {
+  width: 100%;
+  padding: 0 1.2rem;
+  text-align: center;
+}
+
+.sidebar header {
+  padding: 0.5rem 1.2rem;
+  color: var(--white);
+  background-color: var(--primary-dark-1);
+  margin-bottom: 1.5rem;
+}
+
+.sidebar .info > * {
+  margin-bottom: 1rem;
+}
+.sidebar .info .avatar img {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  padding: 4px;
+  box-shadow: var(--shadow-spread);
+}
+.sidebar .info .description {
+  color: var(--secondary);
+  font-size: var(--text-sm);
+}
+.sidebar .info .about a {
+  text-decoration: underline;
+  color: var(--primary);
+}
+.sidebar .info .about a:hover {
+  color: var(--primary-light-2);
+}
+.sidebar nav {
+  margin-top: 1.5rem;
+}
+.sidebar nav ul,
+.sidebar nav ul li a {
+  display: flex;
+}
+.sidebar nav ul {
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-top: 1px solid var(--primary-light-3);
+  border-bottom: 1px solid var(--primary-light-3);
+  transition: all 0.25s;
+}
+.sidebar nav ul:hover {
+  box-shadow: var(--shadow-inner);
+  transition: all 0.25s;
+}
+.sidebar nav ul li {
+  margin-right: 1.5rem;
+}
+.sidebar nav ul li:last-child {
+  margin-right: 0;
+}
+.sidebar nav ul li a {
+  flex-direction: column;
+  transition: color 0.25s;
+}
+.sidebar nav ul li a .nav-item__count {
+  font-size: var(--text-lg);
+}
+.sidebar nav ul li a:hover {
+  color: var(--primary);
+  transition: color 0.25s;
+}

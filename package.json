@@ -28,6 +28,7 @@
     "glob": "^7.1.6",
     "highlight.js": "^10.5.0",
     "markdown-it": "^12.0.4",
+    "markdown-it-anchor": "^7.0.1",
     "ramda": "^0.27.1"
   }
 }

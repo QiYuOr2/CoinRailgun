@@ -1,0 +1,14 @@
+<div class="post-list">
+  {{each posts}}
+  {{@ $value}}
+  {{/each}}
+</div>
+<div class="pagination">
+  <ul>
+  {{each pagination}}
+    <li class="{{if $value.isPrev}}prev{{/if}}{{if $value.isNext}}next{{/if}}{{if $value.isCurrent}}current{{/if}}">
+      <a href="{{$value.href}}">{{$value.key}}</a>
+    </li>
+  {{/each}}
+  </ul>
+</div>

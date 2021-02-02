@@ -3,9 +3,19 @@
 {{block 'title'}}{{title}}{{/block}}
 
 {{block 'head'}}
-  <link rel="stylesheet" href="../assets/css/index.css" />
+  <link rel="stylesheet" href="/assets/css/index.css" />
+  <link rel="stylesheet" href="/assets/css/sidebar.css" />
+  <link rel="stylesheet" href="/assets/css/footer.css" />
+{{/block}}
+
+{{block 'aside'}}
+  {{include sidebar sidebarData}}
 {{/block}}
 
 {{block 'content'}}
-  {{@ content}}
+  {{include postList postData}}
+{{/block}}
+
+{{block 'footer'}}
+  {{include footer footerData}}
 {{/block}}

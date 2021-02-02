@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+}
+
+.container .post-item {
+  border-radius: 4px;
+  background-color: var(--white-light-2);
+  padding: 1rem;
+  padding-bottom: 0.7rem;
+  box-shadow: var(--shadow-spread-light-2);
+  margin-bottom: 1rem;
+}
+
+.container .post-item .post-item__title {
+  font-size: var(--text-xxl);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.container .post-item .post-item__title a {
+  color: var(--primary);
+}
+.container .post-item .post-item__title a:hover {
+  text-decoration: underline;
+}
+.container .post-item .post-item__desc {
+  display: flex;
+  font-size: var(--text-sm);
+  margin-bottom: 0.5rem;
+}
+.container .post-item .post-item__desc,
+.container .post-item .post-item__desc a {
+  color: var(--primary-dark-2);
+}
+
+.container .post-item .post-item__desc > p {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.container .post-item .post-item__desc > p i {
+  margin-right: 5px;
+}
+
+.container .post-item .post-item__desc > p i.fa-folder-o {
+  transform: scale(1.3);
+}
+
+.container .post-item .post-item__desc-category {
+  margin-right: 5px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.25s;
+}
+.container .post-item .post-item__desc-category:hover {
+  background-color: var(--white);
+  transition: all 0.25s;
+}
+
+.container .post-item .post-item__tags {
+  border-top: 1px solid var(--primary-light-3);
+  font-size: var(--text-sm);
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.container .post-item .post-item__tags a {
+  font-size: var(--text-xs);
+  margin-right: 5px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: all 0.25s;
+}
+.container .post-item .post-item__tags a:hover {
+  background-color: var(--white);
+  transition: all 0.25s;
+}
+
+.container .pagination,
+.container .footer {
+  text-align: center;
+}
+
+.container .pagination ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .pagination ul a {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  background-color: var(--white);
+  transition: all 0.25s;
+}
+.container .pagination ul a:hover {
+  background-color: var(--primary-dark-1);
+  color: var(--white);
+  transition: all 0.25s;
+}
+.container .pagination ul .prev a,
+.container .pagination ul .next a {
+  width: 4rem;
+}
+.container .pagination ul .current a {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+footer .footer {
+  margin-top: 1rem;
+  font-size: var(--text-sm);
+  color: var(--primary-dark-2);
+}
+
+footer .footer .theme,
+footer .footer .copyright > span {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+footer .footer a:hover {
+  color: var(--primary-light-2);
+}

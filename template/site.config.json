@@ -1,26 +1,46 @@
 {
   "basic": {
-    "title": "梦里的博客",
-    "author": "徐梦宇",
-    "description": "每一个冬天的句点都是春暖花开。"
+    "icon": "",
+    "avatar": "https://cdn.jsdelivr.net/gh/Tuzilow/Tuzilow.github.io/images/avatar.png",
+    "title": "Tuzilow的小站",
+    "author": "Tuzilow",
+    "description": "想要成为大佬",
+    "keywords": []
   },
   "theme": {
     "name": "default",
     "highlight": "railscasts",
-    "page_size": 7,
+    "pageSize": 7,
     "exclude": [
       "life"
     ],
+    "about": {
+      "label": "about me.",
+      "url": "/about"
+    },
     "nav": [
       {
-        "title": "标签",
-        "url": "/tags"
+        "name": "posts",
+        "label": "归档",
+        "url": "/archives"
       },
       {
-        "title": "关于",
-        "url": "/about"
+        "name": "categories",
+        "label": "分类",
+        "url": "/categories"
+      },
+      {
+        "name": "tags",
+        "label": "标签",
+        "url": "/tags"
       }
-    ]
+    ],
+    "footer": {
+      "beian": "",
+      "copyright": {
+        "year": "2019-2021"
+      }
+    }
   },
   "dev_server": {
     "port": 3000
