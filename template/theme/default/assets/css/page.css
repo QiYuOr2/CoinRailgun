@@ -1,5 +1,6 @@
 .container {
   display: flex;
+  min-height: 100vh;
 }
 
 .container .post-item {
