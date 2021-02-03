@@ -9,6 +9,12 @@
   padding-bottom: 0.7rem;
   box-shadow: var(--shadow-spread-light-2);
   margin-bottom: 1rem;
+  transition: all 0.25s;
+}
+
+.container .post-item:hover {
+  box-shadow: var(--shadow-spread);
+  transition: all 0.25s;
 }
 
 .container .post-item .post-item__title {
@@ -18,9 +24,20 @@
 }
 .container .post-item .post-item__title a {
   color: var(--primary);
+  position: relative;
 }
-.container .post-item .post-item__title a:hover {
-  text-decoration: underline;
+.container .post-item .post-item__title a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.25s;
+}
+.container .post-item .post-item__title a:hover::before {
+  width: 100%;
+  background-color: var(--primary);
+  transition: all 0.25s;
 }
 .container .post-item .post-item__desc {
   display: flex;
@@ -76,6 +93,10 @@
   transition: all 0.25s;
 }
 
+.container .post-item .post-item__abstract {
+  margin-bottom: 0.7rem;
+}
+
 .container .pagination,
 .container .footer {
   text-align: center;
@@ -119,6 +140,9 @@ footer .footer .theme,
 footer .footer .copyright > span {
   display: inline-block;
   margin-top: 0.5rem;
+}
+footer .footer a {
+  color: var(--primary);
 }
 footer .footer a:hover {
   color: var(--primary-light-2);

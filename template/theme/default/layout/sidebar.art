@@ -10,6 +10,17 @@
       <a href="{{about.url}}">{{about.label}}</a>
     </div>
   </div>
+  <div class="links">
+    <ul>
+    {{each links}}
+      <li class="links-item">
+        <a href="{{$value.url}}" target="_blank">
+          <i class="fa {{$value.label}}" aria-hidden="true"></i>
+        </a>
+      </li>
+    {{/each}}
+    </ul>
+  </div>
   <nav>
     <ul>
     {{each nav}}

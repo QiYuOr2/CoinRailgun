@@ -35,6 +35,7 @@
   border-radius: 50%;
   padding: 4px;
   box-shadow: var(--shadow-spread);
+  background-color: #fff;
 }
 .sidebar .info .description {
   color: var(--secondary);
@@ -47,8 +48,28 @@
 .sidebar .info .about a:hover {
   color: var(--primary-light-2);
 }
+
+.sidebar .links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sidebar .links ul .links-item a {
+  width: 2rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s;
+}
+.sidebar .links ul .links-item a:hover {
+  background-color: var(--primary-light-2);
+  transition: all 0.25s;
+}
+
 .sidebar nav {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 .sidebar nav ul,
 .sidebar nav ul li a {

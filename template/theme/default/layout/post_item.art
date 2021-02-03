@@ -9,7 +9,6 @@
       <i class="fa fa-calendar" aria-hidden="true"></i>
       {{date}}
     </p>
-    
     <p class="post-item__desc-category">
       <i class="fa fa-folder-o" aria-hidden="true"></i>
       <a href="/categories/{{category}}">
@@ -19,7 +18,7 @@
   </div>
   <div class="post-item__abstract">
     <p class="post-item__abstract-content">{{@ abstracts}}</p>
-    <p class="more">
+    <p class="more" style="display:none;">
       <a href="{{url}}">查看更多</a>
     </p>
   </div>

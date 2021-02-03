@@ -79,3 +79,21 @@ main {
   padding: 1.5rem 10rem 1.5rem 30rem;
   background-color: var(--white-light-1);
 }
+
+blockquote {
+  position: relative;
+  background: var(--white);
+  margin-left: 0;
+  padding: 0.2rem 0.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-dark-3);
+}
+blockquote::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: var(--primary);
+}

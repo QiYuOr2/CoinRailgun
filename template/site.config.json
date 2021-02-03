@@ -35,6 +35,16 @@
         "url": "/tags"
       }
     ],
+    "links": [
+      {
+        "label": "fa-github-alt",
+        "url": "https://github.com/Tuzilow"
+      },
+      {
+        "label": "fa-qq",
+        "url": "tencent://message/?uin=1176281967"
+      }
+    ],
     "footer": {
       "beian": "",
       "copyright": {
