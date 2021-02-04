@@ -14,15 +14,16 @@ program
   .description('创建新的文章')
   .action(require('../lib/new.js'));
 
-// program
-//     .command('server [dir]')
-//     .description('preview the blog by running a local server')
-//     .action(require('../lib/preview.js'))
+program
+  .command('server [dir]')
+  .description('本地预览网站')
+  .option('-d, --dir <dir>', 'build时输出的目录')
+  .action(require('../lib/preview.js'));
 
 program
   .command('build [dir]')
-  .description('将文章打包为html')
-  .option('-o, --output <dir>', 'render blog to html')
+  .description('将文章渲染为html')
+  .option('-o, --output <dir>', '输出目录')
   .action(require('../lib/build'));
 
 // program

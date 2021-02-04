@@ -130,21 +130,3 @@
   background-color: var(--primary);
   color: var(--white);
 }
-
-footer .footer {
-  margin-top: 1rem;
-  font-size: var(--text-sm);
-  color: var(--primary-dark-2);
-}
-
-footer .footer .theme,
-footer .footer .copyright > span {
-  display: inline-block;
-  margin-top: 0.5rem;
-}
-footer .footer a {
-  color: var(--primary);
-}
-footer .footer a:hover {
-  color: var(--primary-light-2);
-}

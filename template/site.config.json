@@ -9,7 +9,7 @@
   },
   "theme": {
     "name": "default",
-    "highlight": "railscasts",
+    "highlight": "github-gist",
     "pageSize": 7,
     "exclude": [
       "life"

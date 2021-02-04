@@ -1,0 +1,51 @@
+{{extend layout}}
+
+{{block 'title'}}{{title}}{{/block}}
+
+{{block 'highlight'}}{{codeTheme}}{{/block}}
+
+{{block 'head'}}
+  <link rel="stylesheet" href="/assets/css/page.css" />
+  <link rel="stylesheet" href="/assets/css/sidebar.css" />
+  <link rel="stylesheet" href="/assets/css/footer.css" />
+  <link rel="stylesheet" href="/assets/css/post.css" />
+{{/block}}
+
+{{block 'aside'}}
+  {{include sidebar sidebarData}}
+{{/block}}
+
+{{block 'content'}}
+  <div class="post">
+    <div class="post-front">
+      <h1 class="post-front__title">{{title}}</h1>
+      <div class="post-front__desc">
+        <p class="post-front__desc-date">
+          <i class="fa fa-calendar" aria-hidden="true"></i>
+          {{date}}
+        </p>
+        <p class="post-front__desc-category">
+          <i class="fa fa-folder-o" aria-hidden="true"></i>
+          <a href="/categories/{{category}}">
+            {{category}}
+          </a>
+        </p>
+          <div class="post-front__desc-tags">
+          {{each tags}}
+          <a href="/tags/{{$value}}">
+            <i class="fa fa-tag" aria-hidden="true"></i>
+            {{$value}}
+          </a>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+    <div class="post-content">
+      {{@ postContent}}
+    </div>
+  </div>
+{{/block}}
+
+{{block 'footer'}}
+  {{include footer footerData}}
+{{/block}}

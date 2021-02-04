@@ -12,6 +12,7 @@
   --secondary: rgba(29, 14, 12, 0.5);
   --white-light-1: rgba(245, 237, 229, 0.3);
   --white-light-2: rgb(252, 253, 253);
+  --warm: #fdf6e3;
 }
 :root {
   --shadow-spread-light-2: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
@@ -32,6 +33,8 @@
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --font-mono: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
     monospace;
+  --font-song: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto,
+    serif;
   --font-default: 'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif;
 }
 
@@ -80,6 +83,10 @@ main {
   background-color: var(--white-light-1);
 }
 
+code {
+  font-family: var(--font-mono);
+}
+
 blockquote {
   position: relative;
   background: var(--white);
@@ -96,4 +103,91 @@ blockquote::before {
   bottom: 0;
   width: 4px;
   background-color: var(--primary);
+}
+
+pre.hljs {
+  padding: 12px 2px 12px 40px !important;
+  border-radius: 5px !important;
+  position: relative;
+  font-size: 14px !important;
+  line-height: 22px !important;
+  overflow: hidden !important;
+  background-color: var(--warm);
+}
+pre.hljs code {
+  display: block !important;
+  margin: 0 10px !important;
+  overflow-x: auto !important;
+}
+pre.hljs code::-webkit-scrollbar {
+  z-index: 11;
+  width: 6px;
+}
+pre.hljs code::-webkit-scrollbar:horizontal {
+  height: 6px;
+}
+pre.hljs code::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  width: 6px;
+  background: var(--primary);
+}
+pre.hljs code::-webkit-scrollbar-corner,
+pre.hljs code::-webkit-scrollbar-track {
+  background: var(--white);
+}
+pre.hljs code::-webkit-scrollbar-track-piece {
+  background: var(--white);
+  width: 6px;
+}
+.line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 12px;
+  bottom: 12px;
+  left: 0;
+  font-size: 100%;
+  width: 40px;
+  text-align: center;
+  letter-spacing: -1px;
+  border-right: 1px solid var(--primary-light-4);
+  user-select: none;
+  counter-reset: linenumber;
+}
+.line-numbers-rows span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
+}
+.line-numbers-rows span:before {
+  font-family: var(--font-mono);
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  text-align: center;
+}
+b.name {
+  position: absolute;
+  top: 3px;
+  right: 50px;
+  z-index: 10;
+  color: var(--primary-dark-1);
+  padding: 2px 4px;
+  pointer-events: none;
+}
+.copy-btn {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  padding: 2px 4px;
+  z-index: 10;
+  color: #333;
+  cursor: pointer;
+  background-color: var(--warm);
+  border: 0;
+  border-radius: 2px;
+  transition: all 0.25s;
+}
+.copy-btn:hover {
+  background-color: var(--white);
+  transition: all 0.25s;
 }
