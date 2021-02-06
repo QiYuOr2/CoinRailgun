@@ -1,0 +1,49 @@
+{{extend layout}}
+
+{{block 'title'}}{{title}}{{/block}}
+
+{{block 'highlight'}}{{codeTheme}}{{/block}}
+
+{{block 'head'}}
+  <link rel="stylesheet" href="/assets/css/page.css" />
+  <link rel="stylesheet" href="/assets/css/sidebar.css" />
+  <link rel="stylesheet" href="/assets/css/footer.css" />
+  <link rel="stylesheet" href="/assets/css/post.css" />
+  <link rel="stylesheet" href="/assets/css/archives.css">
+  <script defer src="/assets/js/backHome.js"></script>
+{{/block}}
+
+{{block 'aside'}}
+  {{include sidebar sidebarData}}
+{{/block}}
+
+{{block 'content'}}
+  <div class="timeline">
+    <ul>
+      {{set tempYear = ''}}
+      {{set tempMonth = ''}}
+      {{each postList}}
+      {{if tempYear === ''}}
+        <li class="year">{{tempYear = $value.year}}年</li>
+      {{/if}}
+      {{if tempYear !== $value.year}}
+        <li class="year">{{tempYear = $value.year}}年</li>
+      {{/if}}
+      {{if tempMonth === ''}}
+        <li class="month">{{tempMonth = $value.month}}月</li>
+      {{/if}}
+      {{if tempMonth !== $value.month}}
+        <li class="month">{{tempMonth = $value.month}}月</li>
+      {{/if}}
+      <li class="post-link">
+        <span>{{$value.month}}.{{$value.day}}</span>
+        <a href="{{$value.url}}">{{$value.label}}</a>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+{{/block}}
+
+{{block 'footer'}}
+  {{include footer footerData}}
+{{/block}}

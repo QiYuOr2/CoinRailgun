@@ -12,7 +12,7 @@
     <p class="post-item__desc-category">
       <i class="fa fa-folder-o" aria-hidden="true"></i>
       <a href="/categories/{{category}}">
-        {{category}}
+        {{category || ''}}
       </a>
     </p>
   </div>

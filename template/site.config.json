@@ -20,7 +20,7 @@
     },
     "nav": [
       {
-        "name": "posts",
+        "name": "archives",
         "label": "归档",
         "url": "/archives"
       },

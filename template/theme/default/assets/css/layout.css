@@ -10,6 +10,7 @@
   --primary-dark-3: #42231c;
   --black: rgb(29, 14, 12);
   --secondary: rgba(29, 14, 12, 0.5);
+  --text: rgba(29, 14, 12, 0.8);
   --white-light-1: rgba(245, 237, 229, 0.3);
   --white-light-2: rgb(252, 253, 253);
   --warm: #fdf6e3;
@@ -26,6 +27,7 @@
   --text-sm: 14px;
   --text-normal: 16px;
   --text-lg: 18px;
+  --text-xl: 20px;
   --text-xxl: 24px;
 
   --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -36,6 +38,8 @@
   --font-song: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto,
     serif;
   --font-default: 'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif;
+  --font-noto: 'Noto Serif SC', Consolas, serif, Menlo, Monaco,
+    'Liberation Mono', 'Courier New', monospace;
 }
 
 ::-webkit-scrollbar {
@@ -103,6 +107,16 @@ blockquote::before {
   bottom: 0;
   width: 4px;
   background-color: var(--primary);
+}
+
+code {
+  background-color: var(--warm);
+}
+
+p > code,
+li > code {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
 }
 
 pre.hljs {

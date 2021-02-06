@@ -1,0 +1,47 @@
+.timeline {
+  border-radius: 2px;
+  background-color: var(--white-light-2);
+  padding: 2rem 5rem;
+  box-shadow: var(--shadow-spread-light-2);
+  transition: all 0.25s;
+  color: var(--black);
+}
+.timeline:hover {
+  box-shadow: var(--shadow-spread);
+  transition: all 0.25s;
+}
+.timeline ul {
+  padding-left: 2rem;
+}
+.timeline ul .year {
+  font-size: var(--text-xl);
+}
+.timeline ul .month {
+  list-style: disc;
+  margin-left: 1rem;
+}
+.timeline ul .post-link {
+  list-style: circle;
+  margin-left: 2.5rem;
+}
+
+.timeline ul .post-link a {
+  color: var(--primary);
+  position: relative;
+}
+.timeline ul .post-link a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.25s;
+}
+.timeline ul .post-link a:hover {
+  color: var(--primary-light-2);
+}
+.timeline ul .post-link a:hover::before {
+  width: 100%;
+  background-color: var(--primary);
+  transition: all 0.25s;
+}

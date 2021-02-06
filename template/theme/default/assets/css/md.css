@@ -1,0 +1,50 @@
+body {
+  font-family: 'Montserrat', '微软雅黑';
+  font-weight: 400;
+  font-size: 16px;
+  word-spacing: 1px;
+  color: #666;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  color: #444;
+}
+h1 {
+  font-size: 32px;
+  margin: 0 0 45px;
+}
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.17em;
+  position: relative;
+  padding-left: 15px;
+}
+h4 {
+  margin: 15px 0;
+}
+h3:before {
+  content: '';
+  width: 5px;
+  background: var(--primary);
+  position: absolute;
+  left: 0px;
+  height: 75%;
+  top: 12%;
+}
+p {
+  line-height: 1.8em;
+}
+li {
+  line-height: 1.8em;
+}

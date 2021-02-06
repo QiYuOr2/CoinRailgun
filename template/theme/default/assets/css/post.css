@@ -1,3 +1,5 @@
+@import './md.css';
+
 main {
   padding: 0 2rem 1.5rem 22rem;
 }
@@ -5,7 +7,7 @@ main {
 .post {
   border-radius: 2px;
   background-color: var(--white-light-2);
-  padding: 2rem;
+  padding: 2rem 5rem;
   box-shadow: var(--shadow-spread-light-2);
   transition: all 0.25s;
 }
@@ -22,8 +24,9 @@ main {
 
 .post .post-front .post-front__title {
   font-size: 24px;
-  font-family: var(--font-song);
+  font-family: var(--font-noto);
   margin-bottom: 20px;
+  color: var(--black);
 }
 
 .post .post-front .post-front__desc,
@@ -34,7 +37,8 @@ main {
 
 .post .post-front .post-front__desc .post-front__desc-date,
 .post .post-front .post-front__desc .post-front__desc-category {
-  padding: 0.2rem 0.4rem;
+  padding: 0rem 0.5rem;
+  margin-right: 10px;
   display: inline-block;
 }
 
@@ -59,14 +63,70 @@ main {
   transition: all 0.25s;
 }
 
-.post .post-front .post-front__desc .post-front__desc-date {
-  margin-right: 1rem;
-}
-
 .post .post-front .post-front__desc > p {
   margin-bottom: 5px;
 }
 
 .post .post-content > * {
   margin-bottom: 1rem;
+  color: var(--text);
+}
+.post .post-content ul {
+  padding-left: 1.5rem;
+}
+.post .post-content li {
+  list-style: disc;
+  margin-top: 0.25rem;
+}
+.post .post-content li:first-child {
+  margin-top: 0;
+}
+
+.post .post-content strong {
+  color: var(--black);
+}
+
+.post .post-content a {
+  text-decoration: none;
+  color: var(--primary);
+  border-bottom: 2px solid transparent;
+}
+.post .post-content a:hover {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+.sidebar .info > * {
+  margin-bottom: 0;
+}
+.sidebar .info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar .info .avatar {
+  grid-row: 1 / span 3;
+}
+
+.sidebar .back-home {
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.sidebar .info .links {
+  margin-bottom: 0.5rem;
+}
+.sidebar .back-home i {
+  display: inline-block;
+  margin-right: 5px;
+  transition: all 0.25s;
+}
+.sidebar .back-home:hover {
+  color: var(--primary-light-2);
+  transition: all 0.25s;
+}
+.sidebar .back-home:hover i {
+  margin-right: 10px;
+  transition: all 0.25s;
 }
