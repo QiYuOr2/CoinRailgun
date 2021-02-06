@@ -106,3 +106,22 @@
   color: var(--primary);
   transition: color 0.25s;
 }
+
+.sidebar .catalogue .toc {
+  font-size: var(--text-sm);
+  border: 1px dashed var(--primary);
+  border-radius: 5px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+.sidebar .catalogue .toc ol {
+  padding-left: 1rem;
+}
+.sidebar .catalogue .toc ol a {
+  line-height: 2em;
+  color: var(--primary-dark-2);
+}
+.sidebar .catalogue .toc ol a:hover {
+  color: var(--primary-light-2);
+}

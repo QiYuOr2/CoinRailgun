@@ -20,7 +20,9 @@
   --shadow-spread-light: 0 0 7px rgb(0 0 0 / 20%);
   --shadow-spread: 0 0px 10px rgb(0 0 0 / 20%);
   --shadow-spread-dark: 0 0px 16px rgb(0 0 0 / 20%);
-  --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.247);
+  --shadow-normal: 0 4px 6px -1px rgba(0, 0, 0, 0.219),
+    0 2px 4px -1px rgba(0, 0, 0, 0.164);
 }
 :root {
   --text-xs: 12px;

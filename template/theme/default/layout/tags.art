@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="/assets/css/sidebar.css" />
   <link rel="stylesheet" href="/assets/css/footer.css" />
   <link rel="stylesheet" href="/assets/css/post.css" />
+  <link rel="stylesheet" href="/assets/css/tags.css" />
   <script defer src="/assets/js/backHome.js"></script>
+  <script defer src="/assets/js/tags.js"></script>
 {{/block}}
 
 {{block 'aside'}}
@@ -21,13 +23,13 @@
     <nav class="tags-nav">
       <ul>
         {{each tagList}}
-        <li tg="{{$value.label}}">
-          <a href="{{$value.url}}">{{$value.label}}</a>
+        <li tg="{{$value.label}}" style="--i: {{$value.count}}">
+          {{$value.label}}
         </li>
         {{/each}}
       </ul>
     </nav>
-    <ul>
+    <ul class="tag-post">
       {{each postList}}
       <li tg="{{$value.tag}}">
         <span>{{$value.date}}</span>

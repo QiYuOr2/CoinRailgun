@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="/assets/css/sidebar.css" />
   <link rel="stylesheet" href="/assets/css/footer.css" />
   <link rel="stylesheet" href="/assets/css/post.css" />
+  <link rel="stylesheet" href="/assets/css/categories.css" />
   <script defer src="/assets/js/backHome.js"></script>
+  <script defer src="/assets/js/categories.js"></script>
 {{/block}}
 
 {{block 'aside'}}
@@ -27,7 +29,7 @@
         {{/each}}
       </ul>
     </nav>
-    <ul>
+    <ul class="category-post">
       {{each postList}}
       <li ctg="{{$value.category}}">
         <span>{{$value.date}}</span>

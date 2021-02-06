@@ -33,7 +33,5 @@
     {{/each}}
     </ul>
   </nav>
-  {{if catalogue}}
-  <div class="catalogue">目录</div>
-  {{/if}}
+  <div class="catalogue" id="catalogue"></div>
 </div>

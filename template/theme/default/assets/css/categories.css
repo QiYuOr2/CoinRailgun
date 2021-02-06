@@ -1,0 +1,58 @@
+.categories-page {
+  border-radius: 2px;
+  background-color: var(--white-light-2);
+  padding: 2rem 5rem;
+  box-shadow: var(--shadow-spread-light-2);
+  transition: all 0.25s;
+  color: var(--black);
+  min-height: 90%;
+}
+.categories-page .categories-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.categories-page .categories-nav ul li {
+  background-color: var(--primary);
+  margin-right: 1rem;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: var(--white);
+  cursor: pointer;
+  box-shadow: var(--shadow-normal);
+  transition: all 0.25s;
+}
+.categories-page .categories-nav ul li:hover {
+  transition: all 0.25s;
+}
+.categories-page .categories-nav ul li.active {
+  box-shadow: var(--shadow-inner);
+  transition: all 0.25s;
+}
+
+.categories-page .category-post li span {
+  color: var(--primary-dark-3);
+  font-size: var(--text-sm);
+  margin-right: 0.5rem;
+}
+
+.categories-page .category-post li a {
+  color: var(--primary);
+  position: relative;
+}
+.categories-page .category-post li a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.25s;
+}
+.categories-page .category-post li a:hover {
+  color: var(--primary-light-2);
+}
+.categories-page .category-post li a:hover::before {
+  width: 100%;
+  background-color: var(--primary);
+  transition: all 0.25s;
+}

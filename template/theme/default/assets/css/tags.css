@@ -1,0 +1,61 @@
+.tags-page {
+  border-radius: 2px;
+  background-color: var(--white-light-2);
+  padding: 2rem 5rem;
+  box-shadow: var(--shadow-spread-light-2);
+  transition: all 0.25s;
+  color: var(--black);
+  min-height: 90%;
+}
+.tags-page .tags-nav ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.tags-page .tags-nav ul li {
+  margin-right: 1rem;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: var(--black);
+  cursor: pointer;
+  transition: all 0.25s;
+  font-size: calc(var(--text-xs) * (var(--i) / 10 + 1));
+  position: relative;
+}
+.tags-page .tags-nav ul li:hover {
+  color: var(--primary-dark-2);
+  transition: all 0.25s;
+  text-decoration: underline;
+}
+.tags-page .tags-nav ul li.active {
+  color: var(--primary);
+  transition: all 0.25s;
+}
+
+.tags-page .tag-post li span {
+  color: var(--primary-dark-3);
+  font-size: var(--text-sm);
+  margin-right: 0.5rem;
+}
+
+.tags-page .tag-post li a {
+  color: var(--primary);
+  position: relative;
+}
+.tags-page .tag-post li a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.25s;
+}
+.tags-page .tag-post li a:hover {
+  color: var(--primary-light-2);
+}
+.tags-page .tag-post li a:hover::before {
+  width: 100%;
+  background-color: var(--primary);
+  transition: all 0.25s;
+}

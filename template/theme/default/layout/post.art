@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/assets/css/footer.css" />
   <link rel="stylesheet" href="/assets/css/post.css" />
   <script defer src="/assets/js/backHome.js"></script>
+  <script defer src="/assets/js/toc.js"></script>
 {{/block}}
 
 {{block 'aside'}}
@@ -21,16 +22,20 @@
     <div class="post-front">
       <h1 class="post-front__title">{{title}}</h1>
       <div class="post-front__desc">
+        {{if date}}
         <p class="post-front__desc-date">
           <i class="fa fa-calendar" aria-hidden="true"></i>
           {{date}}
         </p>
+        {{/if}}
+        {{if category}}
         <p class="post-front__desc-category">
           <i class="fa fa-folder-o" aria-hidden="true"></i>
           <a href="/categories/{{category}}">
             {{category}}
           </a>
         </p>
+        {{/if}}
           <div class="post-front__desc-tags">
           {{each tags}}
           <a href="/tags/{{$value}}">
