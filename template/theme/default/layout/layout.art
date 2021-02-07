@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/assets/css/layout.css" />
     <script defer src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <script defer src="/assets/js/copyCode.js"></script>
+    <script defer src="/assets/js/backTop.js"></script>
 
     {{block 'head'}}{{/block}}
 

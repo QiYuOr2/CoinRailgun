@@ -3,6 +3,7 @@ const tocParent = toc.parentElement;
 const sidebarToc = document.getElementById('catalogue');
 
 tocParent.removeChild(toc);
+
 sidebarToc.appendChild(toc);
 
 const links = toc.querySelectorAll('li a');
@@ -18,3 +19,7 @@ links.forEach((link) => {
     });
   });
 });
+
+if (!toc.innerText) {
+  sidebarToc.style.display = 'none';
+}

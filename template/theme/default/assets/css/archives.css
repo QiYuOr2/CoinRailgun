@@ -12,6 +12,12 @@
 }
 .timeline ul {
   padding-left: 2rem;
+
+  transform: translateY(-2rem);
+  opacity: 0;
+
+  animation: 0.3s swift-Y ease-in-out forwards,
+    0.3s fade-in ease-in-out forwards;
 }
 .timeline ul .year {
   font-size: var(--text-xl);

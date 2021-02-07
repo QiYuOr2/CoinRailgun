@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="/assets/css/post.css" />
   <script defer src="/assets/js/backHome.js"></script>
   <script defer src="/assets/js/toc.js"></script>
+  <script defer src="/assets/js/copyright.js"></script>
 {{/block}}
 
 {{block 'aside'}}
@@ -49,6 +50,18 @@
     <div class="post-content">
       {{@ postContent}}
     </div>
+    {{if friends}}
+    <ul class="friends">
+      {{each friends}}
+      <li>
+        <a href="{{$value.url}}" target="_blank">
+          <img src="{{$value.avatar}}" alt="{{$value.name}}">
+          <span>{{$value.name}}</span>
+        </a>
+      </li>
+      {{/each}}
+    </ul>
+    {{/if}}
   </div>
 {{/block}}
 

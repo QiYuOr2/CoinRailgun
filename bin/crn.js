@@ -26,14 +26,16 @@ program
   .option('-o, --output <dir>', '输出目录')
   .action(require('../lib/build'));
 
-// program
-//     .command('clean')
-//     .description('clean the blog dir')
-//     .action(require('../lib/clean.js'))
+program
+  .command('clean')
+  .description('清空build出来的静态文件')
+  .option('-d, --dir <dir>', 'build时输出的目录')
+  .action(require('../lib/clean.js'));
 
-// program
-//     .command('page <name>')
-//     .description('create a new page')
-//     .action(require('../lib/page.js'))
+program
+  .command('deploy')
+  .description('部署静态页')
+  .option('-d, --dir <dir>', 'build时输出的目录')
+  .action(require('../lib/deploy.js'));
 
 program.parse(process.argv);

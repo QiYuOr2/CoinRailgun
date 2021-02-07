@@ -1,33 +1,31 @@
-<div class="post-item">
-  <div class="post-item__title">
-    <a href="{{url}}">
-      {{title}}
+<div class="post-item__title">
+  <a href="{{url}}">
+    {{title}}
+  </a>
+</div>
+<div class="post-item__desc">
+  <p class="post-item__desc-date">
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    {{date}}
+  </p>
+  <p class="post-item__desc-category">
+    <i class="fa fa-folder-o" aria-hidden="true"></i>
+    <a href="/categories">
+      {{category || ''}}
     </a>
-  </div>
-  <div class="post-item__desc">
-    <p class="post-item__desc-date">
-      <i class="fa fa-calendar" aria-hidden="true"></i>
-      {{date}}
-    </p>
-    <p class="post-item__desc-category">
-      <i class="fa fa-folder-o" aria-hidden="true"></i>
-      <a href="/categories/{{category}}">
-        {{category || ''}}
-      </a>
-    </p>
-  </div>
-  <div class="post-item__abstract">
-    <p class="post-item__abstract-content">{{@ abstracts}}</p>
-    <p class="more" style="display:none;">
-      <a href="{{url}}">查看更多</a>
-    </p>
-  </div>
-  <div class="post-item__tags">
-    {{each tags}}
-    <a href="/tags/{{$value}}">
-      <i class="fa fa-tag" aria-hidden="true"></i>
-      {{$value}}
-    </a>
-    {{/each}}
-  </div>
+  </p>
+</div>
+<div class="post-item__abstract">
+  <p class="post-item__abstract-content">{{@ abstracts}}</p>
+  <p class="more" style="display:none;">
+    <a href="{{url}}">查看更多</a>
+  </p>
+</div>
+<div class="post-item__tags">
+  {{each tags}}
+  <a href="/tags">
+    <i class="fa fa-tag" aria-hidden="true"></i>
+    {{$value}}
+  </a>
+  {{/each}}
 </div>

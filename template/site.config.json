@@ -5,7 +5,16 @@
     "title": "Tuzilow的小站",
     "author": "Tuzilow",
     "description": "想要成为大佬",
-    "keywords": []
+    "keywords": [
+      "Tuzilow",
+      "鳕鱼堡",
+      "前端",
+      "JavaScript",
+      "TypeScript",
+      "nodejs",
+      "后端",
+      "编程"
+    ]
   },
   "theme": {
     "name": "default",
@@ -13,6 +22,14 @@
     "pageSize": 7,
     "exclude": [
       "life"
+    ],
+    "friends": [
+      {
+        "name": "BAR团队",
+        "avatar": "http://www.barteam.cn/static/logo.jpg",
+        "desc": "",
+        "url": "http://www.barteam.cn/"
+      }
     ],
     "about": {
       "label": "about me.",
@@ -51,6 +68,11 @@
         "year": "2019-2021"
       }
     }
+  },
+  "deploy": {
+    "username": "Tuzilow",
+    "repo": "",
+    "branch": "main"
   },
   "dev_server": {
     "port": 3000

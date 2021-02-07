@@ -17,6 +17,9 @@
   width: 100%;
   padding: 0 1.2rem;
   text-align: center;
+
+  opacity: 0;
+  animation: 0.3s fade-in ease-in-out forwards;
 }
 
 .sidebar header {
@@ -24,6 +27,7 @@
   color: var(--white);
   background-color: var(--primary-dark-1);
   margin-bottom: 1.5rem;
+  opacity: 1;
 }
 
 .sidebar .info > * {
@@ -106,7 +110,9 @@
   color: var(--primary);
   transition: color 0.25s;
 }
-
+.sidebar .catalogue {
+  margin-bottom: 1rem;
+}
 .sidebar .catalogue .toc {
   font-size: var(--text-sm);
   border: 1px dashed var(--primary);

@@ -33,6 +33,15 @@
   transition: all 0.25s;
 }
 
+.tags-page .tags-nav ul li {
+  animation: 0.5s zoom-in ease-in-out forwards;
+}
+.tags-page .tag-post li {
+  transform: translateX(-2rem);
+  opacity: 0;
+  animation: 0.3s swift-X ease-in-out forwards,
+    0.3s fade-in ease-in-out forwards;
+}
 .tags-page .tag-post li span {
   color: var(--primary-dark-3);
   font-size: var(--text-sm);

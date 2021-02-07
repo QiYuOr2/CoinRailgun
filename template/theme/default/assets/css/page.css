@@ -11,6 +11,13 @@
   box-shadow: var(--shadow-spread-light-2);
   margin-bottom: 1rem;
   transition: all 0.25s;
+
+  opacity: 0;
+  transform: translateY(-2rem);
+
+  animation: 0.3s swift-Y ease-in-out forwards,
+    0.3s fade-in ease-in-out forwards;
+  animation-delay: calc(var(--i) * 0.1s);
 }
 
 .container .post-item:hover {

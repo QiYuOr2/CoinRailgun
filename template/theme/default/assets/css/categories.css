@@ -30,6 +30,14 @@
   transition: all 0.25s;
 }
 
+.categories-page .category-post li {
+  transform: translateX(-2rem);
+  opacity: 0;
+  animation: 0.2s swift-X ease-in-out forwards,
+    0.2s fade-in ease-in-out forwards;
+  animation-delay: calc(var(--i) * 0.01s);
+}
+
 .categories-page .category-post li span {
   color: var(--primary-dark-3);
   font-size: var(--text-sm);

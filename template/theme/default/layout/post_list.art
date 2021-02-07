@@ -1,6 +1,8 @@
 <div class="post-list">
   {{each posts}}
+  <div class="post-item" style="--i: {{$index}}">
   {{@ $value.postHtml}}
+  </div>
   {{/each}}
 </div>
 <div class="pagination">

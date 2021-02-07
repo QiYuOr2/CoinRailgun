@@ -23,6 +23,8 @@
   --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.247);
   --shadow-normal: 0 4px 6px -1px rgba(0, 0, 0, 0.219),
     0 2px 4px -1px rgba(0, 0, 0, 0.164);
+  --shadow-md: 0 6px 12px -1px rgba(0, 0, 0, 0.219),
+    0 4px 8px -1px rgba(0, 0, 0, 0.164);
 }
 :root {
   --text-xs: 12px;
@@ -206,4 +208,47 @@ b.name {
 .copy-btn:hover {
   background-color: var(--white);
   transition: all 0.25s;
+}
+
+.back-top {
+  outline: none;
+  position: fixed;
+  bottom: 0;
+  right: 1rem;
+
+  padding: 4px 8px;
+  border: 0;
+
+  cursor: pointer;
+
+  background-color: var(--primary-light-2);
+  color: var(--primary-dark-2);
+}
+
+@keyframes swift-Y {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes swift-X {
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoom-in {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
 }

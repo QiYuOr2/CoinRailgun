@@ -31,7 +31,7 @@
     </nav>
     <ul class="category-post">
       {{each postList}}
-      <li ctg="{{$value.category}}">
+      <li ctg="{{$value.category}}" style="--i: {{$index}}">
         <span>{{$value.date}}</span>
         <a href="{{$value.url}}">{{$value.label}}</a>
       </li>
