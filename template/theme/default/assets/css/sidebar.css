@@ -5,9 +5,27 @@
   height: 100%;
   overflow-y: auto;
   box-shadow: var(--shadow-spread-light);
-  background-color: var(--white);
+  transition: all 0.25s;
+  background: var(--white) url('/assets/logo.png') no-repeat bottom center;
+  background-size: 100px 100px;
   transition: all 0.25s;
 }
+
+@media (max-width: 1000px) {
+  .sidebar {
+    width: 15rem;
+    transition: all 0.25s;
+  }
+}
+
+@media (max-width: 750px) {
+  .sidebar {
+    position: fixed;
+    left: -15rem;
+    transition: all 0.25s;
+  }
+}
+
 .sidebar:hover {
   box-shadow: var(--shadow-spread-dark);
   transition: all 0.25s;
@@ -73,6 +91,7 @@
 }
 
 .sidebar nav {
+  background-color: var(--white);
   margin-top: 1rem;
 }
 .sidebar nav ul,

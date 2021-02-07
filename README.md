@@ -1,36 +1,38 @@
 # CoinRailgun
 
+![CoinRailgun Logo](https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/crnlogo.png)
+
 一个基于nodejs的静态博客生成器
 
 
-## Quick Start
+## 快速开始
 
-**Install CoinRailgun**
+**安装 CoinRailgun**
 
 ```bash
 npm install -g coinrailgun
 ```
 
-**Initialize your blog**
+**初始化博客**
 
 ```bash
 crn init blog
 cd blog
 ```
 
-**Create new post**
+**创建新的文章**
 
 ```bash
 crn new "Hello CRN"
 ```
 
-**Build static files**
+**生成静态文件**
 
 ```bash
 crn build
 ```
 
-**Start local server**
+**本地运行网站**
 
 ```bash
 crn server

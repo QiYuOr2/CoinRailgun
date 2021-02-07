@@ -7,6 +7,19 @@
   color: var(--black);
   min-height: 90%;
 }
+
+@media (max-width: 1300px) {
+  .tags-page {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .tags-page {
+    padding: 2rem 2rem;
+  }
+}
+
 .tags-page .tags-nav ul {
   display: flex;
   align-items: center;

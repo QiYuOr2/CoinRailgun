@@ -4,6 +4,18 @@ main {
   padding: 0 2rem 1.5rem 22rem;
 }
 
+@media (max-width: 1000px) {
+  main {
+    padding: 0 2rem 1.5rem 17rem;
+  }
+}
+
+@media (max-width: 750px) {
+  main {
+    padding: 0 0 1.5rem 0;
+  }
+}
+
 .post {
   border-radius: 2px;
   background-color: var(--white-light-2);
@@ -11,6 +23,17 @@ main {
   box-shadow: var(--shadow-spread-light-2);
   transition: all 0.25s;
 }
+
+@media (max-width: 750px) {
+  .post {
+    padding: 2rem 2rem;
+  }
+}
+
+.post img {
+  max-width: 100%;
+}
+
 .post:hover {
   box-shadow: var(--shadow-spread);
   transition: all 0.25s;

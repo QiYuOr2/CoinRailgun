@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="author" content="{{author}}">
     <meta name="description" content="{{description}}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
@@ -15,6 +16,7 @@
     <script defer src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
     <script defer src="/assets/js/copyCode.js"></script>
     <script defer src="/assets/js/backTop.js"></script>
+    <script defer src="/assets/js/tool.js"></script>
 
     {{block 'head'}}{{/block}}
 

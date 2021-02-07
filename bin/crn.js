@@ -32,10 +32,10 @@ program
   .option('-d, --dir <dir>', 'build时输出的目录')
   .action(require('../lib/clean.js'));
 
-program
-  .command('deploy')
-  .description('部署静态页')
-  .option('-d, --dir <dir>', 'build时输出的目录')
-  .action(require('../lib/deploy.js'));
+// program
+//   .command('deploy')
+//   .description('部署静态页')
+//   .option('-d, --dir <dir>', 'build时输出的目录')
+//   .action(require('../lib/deploy.js'));
 
 program.parse(process.argv);

@@ -7,14 +7,27 @@
   color: var(--black);
   min-height: 90%;
 }
+
+@media (max-width: 1300px) {
+  .categories-page {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .categories-page {
+    padding: 2rem 2rem;
+  }
+}
+
 .categories-page .categories-nav ul {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1rem;
 }
 .categories-page .categories-nav ul li {
   background-color: var(--primary);
   margin-right: 1rem;
+  margin-bottom: 1rem;
   padding: 6px 12px;
   border-radius: 4px;
   color: var(--white);

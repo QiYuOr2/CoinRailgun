@@ -85,10 +85,48 @@ a:hover {
   transition: color 0.25s;
 }
 
+.tool {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 1.2rem;
+  left: 1.2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  color: var(--primary-light-4);
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  transition: all 0.25s;
+}
+
 main {
   width: 100%;
   padding: 1.5rem 10rem 1.5rem 30rem;
   background-color: var(--white-light-1);
+}
+
+@media (max-width: 1300px) {
+  main {
+    padding: 1.5rem 5rem 1.5rem 25rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  main {
+    padding: 1.5rem 2rem 1.5rem 17rem;
+  }
+}
+
+@media (max-width: 750px) {
+  main {
+    padding: 1.5rem 1rem 1.5rem 1rem;
+  }
+  .tool {
+    display: flex;
+  }
 }
 
 code {

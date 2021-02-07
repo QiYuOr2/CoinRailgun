@@ -6,6 +6,19 @@
   transition: all 0.25s;
   color: var(--black);
 }
+
+@media (max-width: 1300px) {
+  .timeline {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .timeline {
+    padding: 2rem 1rem;
+  }
+}
+
 .timeline:hover {
   box-shadow: var(--shadow-spread);
   transition: all 0.25s;
@@ -19,6 +32,13 @@
   animation: 0.3s swift-Y ease-in-out forwards,
     0.3s fade-in ease-in-out forwards;
 }
+
+@media (max-width: 1000px) {
+  .timeline {
+    padding-left: 1rem;
+  }
+}
+
 .timeline ul .year {
   font-size: var(--text-xl);
 }
