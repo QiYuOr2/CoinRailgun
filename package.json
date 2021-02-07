@@ -1,7 +1,7 @@
 {
   "name": "coinrailgun",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "基于nodejs的静态博客生成器",
   "bin": {
     "crn": "./bin/crn.js"
   },
@@ -12,9 +12,9 @@
     "type": "git",
     "url": "git+https://github.com/Tuzilow/CoinRailgun.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["nodejs", "blog", "website", "cli"],
+  "author": "Tuzilow",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Tuzilow/CoinRailgun/issues"
   },
